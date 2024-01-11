@@ -1,25 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
+
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="relative p-2 flex flex-none overflow-x-auto h-screen w-full overflow-y-hidden">
+      <CardList title={"Incomplete"} />
+      <CardList title={"To do"} />
+      <CardList title={"Doing"} />
+      <CardList title={"Under Review"} />
+      <CardList title={"Completed"} />
+      <CardList title={"Overdue"} />
+      <CardList title={"For later"} />
     </div>
   );
 }
-
-export default App;
